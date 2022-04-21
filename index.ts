@@ -31,4 +31,4 @@ app.get("*", (req, res) => {
   return res.send("hello world");
 });
 
-app.listen(process.env.port || 4000);
+app.listen(process.env.PORT || 4000);
