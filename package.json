@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev index.ts",
-    "start": "npm install && npm run build && ts-node dist/index.js",
+    "start": "npm install && node index.ts",
     "build": "tsc -p ."
   },
   "author": "",
