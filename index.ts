@@ -27,8 +27,12 @@ app.use(
   })
 );
 
+app.get("/api/test", (req, res) => {
+  return res.send({ success: true, message: "hello world" });
+});
+
 app.get("*", (req, res) => {
-  return res.send("hello world");
+  return res.send("Welcome to the yng api :)");
 });
 
 app.listen(process.env.PORT || 4000);
